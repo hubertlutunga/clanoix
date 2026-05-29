@@ -266,7 +266,7 @@ p {
 
 .hero h1 {
   max-width: 12ch;
-  font-size: clamp(54px, 5.8vw, 112px);
+  font-size: 5.8vw;
   line-height: 0.9;
 }
 
@@ -945,10 +945,6 @@ p {
   .hero {
     min-height: auto;
     padding: 44px 0 48px;
-  }
-
-  .hero h1 {
-    font-size: clamp(46px, 15vw, 72px);
   }
 
   .lead {
