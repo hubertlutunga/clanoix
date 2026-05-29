@@ -9,7 +9,7 @@
       <a href="#livre">Le livre</a>
       <a href="#catalogue">Catalogue</a>
       <a href="#auteur">Auteur</a>
-      <a href="#commande" class="btn btn-primary">Commander</a>
+      <a href="#commande" class="btn btn-primary" style="color:#fff">Commander</a>
     </nav>
 
     <button class="menu-toggle" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
