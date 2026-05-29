@@ -1,0 +1,15 @@
+# Système
+.DS_Store
+
+# Configuration locale et secrets
+config.php
+.env
+*.env
+
+# Logs
+*.log
+admin/error_log
+
+# Fichiers sources lourds ou privés
+*.psd
+images/*.pdf

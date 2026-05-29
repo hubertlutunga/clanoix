@@ -1,0 +1,20 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^clanoix\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.clanoix\.com$
+RewriteRule ^/?$ "https\:\/\/clanoix\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.prisedefonction\.com$
+RewriteRule ^/?$ "https\:\/\/prisedefonction\.com\/" [R=301,L]
+
+RewriteEngine On
+
+# Si fichier ou dossier existe → ne pas réécrire
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Réécriture vers index.php
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ index.php?page=$1 [L,QSA]
+
+# Page par défaut
+RewriteRule ^$ index.php?page=accueil [L,QSA]
+
